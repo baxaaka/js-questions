@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript savol-javoblar</title>
+    <!-- fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="section">
+        <h1>JAVASCRIPT SAVOL JAVOBLAR</h1>
+        <div class="card">
+          <h4>- Javascript nima.</h4>
+          <br />
+          <span
+            >JavaScript - bu web dasturlash uchun ishlatiladigan yuqori darajada
+            tushunchali va interpretatsiya qilingan dasturlash tili</span
+          >
+        </div>
+
+        <div class="card">
+          <h4>- Let , const , var larnig farqi.</h4>
+          <br />
+          <span
+            >Let, const, va var o'zgaruvchilarini ta'riflashda foydalaniladigan
+            JavaScript kalit so'zlari. Ularning farqlari quyidagicha:
+            <br /><br />
+            `var`: Bu JavaScriptda o'zgaruvchini ta'riflash uchun eski usul.
+            `var` bilan ta'riflangan o'zgaruvchilar funksiyalar yoki global skop
+            (global o'zgaruvchilar) ichida bo'ladi. `var` bilan ta'riflangan
+            o'zgaruvchilar "hoisting" deb ataluvchi usul bilan ishlayadi, ya'ni
+            ularning ta'riflari foydalanilishidan oldin bajariladi. Shuning
+            uchun ularni o'zgartirish ham mumkin. `var` o'zgaruvchilari esa blok
+            skop (blok ichidagi o'zgaruvchilar)ni qo'llab-quvvatlamaydi.
+
+            <br />
+            <br />
+            `let`: `let` kalit so'zi esa ES6 (ECMAScript 2015) bilan kiritilgan
+            yangilik. `let` bilan ta'riflangan o'zgaruvchilar blok skopni
+            qo'llab-quvvatlaydi. Blok skop, masalan, if, for, while, va funksiya
+            ichidagi bloklar, uchun amal qiladi. `let` o'zgaruvchilari
+            "hoisting" qilinmaydi, ya'ni ularning ta'riflari ular
+            ishlatilishidan oldin bajarilmaydi. Shuning uchun ularni blok ichida
+            faqatgina ular ta'riflanganidan so'ng foydalanish mumkin.
+
+            <br /><br />
+            `const`: `const` kalit so'zi ham ES6 bilan kiritilgan yangilik. Bu
+            kalit so'z orqali ta'riflangan o'zgaruvchilar uchun qiymat
+            o'zgartirilmasligi kerak bo'lgan ma'lumotlarni (o'zgarmaslar)
+            belgilash uchun ishlatiladi. `const` bilan ta'riflangan
+            o'zgaruvchilarga bitta qiyinligi bor: ularni qiymati bir marta
+            ta'riflandikdan keyin o'zgartirib bo'lmaydi. Lekin, ob'ektlarning
+            yoki massivlarining ichidagi elementlarni o'zgartirish mumkin.
+          </span>
+        </div>
+
+        <div class="card">
+          <h4>-Javascript singli-threadmi yoki multi-threadmi</h4>
+          <br />
+          <span
+            >JavaScript bir "single-threaded" (yagona o'lchamli) dasturlash tili
+            sifatida bilinadi. Bu degani, JavaScript dasturlari bir vaqtning
+            o'zida faqat bir ta'sirni bajarishi mumkin. Bunda barcha JavaScript
+            kodlarining bajarilishi o'zgaruvchanlarning o'zgartirilishi bilan
+            bog'liq bo'ladi.
+
+            <br /><br />
+            JavaScriptning singli-threaded bo'lishi "Event Loop" (voqealar
+            loop'i) va "Callback Queue" (qayta chaqirishlar navbatlari)
+            mekanizmlari yordamida amalga oshiriladi. Bu mekanizmlar
+            JavaScriptning asinxron hodisalarini boshqarishga imkon beradi.
+
+            <br /><br />
+            JavaScript asinxronlikni yaratish uchun "callback" funksiyalarni,
+            Promiselarni, async/await sintaksisini va boshqa asinxronlikni
+            yo'qotish usullarini qo'llab-quvvatlaydi. Bunday usullar yordamida
+            amalga oshiriladigan kodlar singli-threaded muloqotda bo'lib,
+            bajarish jarayoni boshqa ishlar bilan bog'liq bo'lmagan holda davom
+            etishi mumkin
+          </span>
+        </div>
+
+        <div class="card">
+          <h4>-Javascript asinxron ishlaydimi yo sinxron</h4>
+          <br />
+          <span>JavaScript asinxron ishlovchi dasturlash tilidir</span>
+        </div>
+
+        <div class="card">
+          <h4>-Promise nima</h4>
+          <br />
+          <span
+            >Promislar: Promislar JavaScriptda asinxron kodni yozish uchun
+            yordam beradigan obyektlardir. Promislar bajarilishi "pending"
+            (kutilmoqda), "fulfilled" (muvaffaqiyatli yakunlandi) yoki
+            "rejected" (xatolik bilan yakunlandi) holatlarida bo'lishi mumkin.
+            .then() va .catch() metodlari yordamida Promislar natijalari bilan
+            ishlash mumkin.</span
+          >
+        </div>
+
+        <div class="card">
+          <h4>-Calback funtion</h4>
+          <br />
+          <span
+            >Callback funksiyalar: Callback funksiya boshqa funksiya parametri
+            sifatida uzatiladi va asinxron vazifalar tugagandan keyin
+            chaqiriladi. Masalan, setTimeout funksiyasi asinxronlikni o'rniga
+            callback funksiyasini qabul qiladi va belgilangan vaqt o'tgach unga
+            chaqiriladi.</span
+          >
+        </div>
+
+        <div class="card">
+          <h4>-Async /Await</h4>
+          <br />
+          <span
+            >ES8 (ECMAScript 2017) bilan kiritilgan async/await sintaksisi
+            JavaScriptda asinxron kod yozishni osonlashtiradi. async
+            funksiyalarda ishlatilganida, funksiya avtomatik ravishda Promisga
+            aylangan bo'ladi. await operatori esa asinxronlik tugagandan keyin
+            natijani kutadi.</span
+          >
+        </div>
+
+        <div class="card">
+          <h4>Javascriptda data typelar nechta sanab bering</h4>
+          <br />
+          <span
+            >Javascripta 8 data typelar mavjud String Number Bigint Boolean
+            Undefined Null Symbol Object
+          </span>
+        </div>
+
+        <div class="card">
+          <h4>Event Loop nima? U qanday ishlaydi</h4>
+          <br />
+          <span></span>
+        </div>
+
+        <div class="card">
+          <h4>Regular function va arrow functionlar farqi</h4>
+          <br />
+          <span
+            >Regular funtionda this konteksti ,arguments ,new object bor ,arrow
+            function da yoq .Regular funksiyalar qo'llanishiga odatda nom
+            beriladi, misol uchun functionName(). Arrow funksiyalar esa nom
+            berilgani bo'lsa ham, nomsiz ko'rsatilishi ham mumkin. Arrow
+            funksiyalar nomsiz yoki bir qatorlik funksiyalar sifatida ham
+            ishlatilishi oson.</span
+          >
+        </div>
+
+        <div class="card">
+          <h4>Map object farqi	</h4>
+          <br />
+          <span>Object: Ob'ektlar boshqarilishida odatda kalitlar bilan murojaat qilish va ob'ektga yangi kalit-qiymat juftligi qo'shish, o'zgartirish yoki o'chirishda foydalaniladi. <br>
+            Map: Map obyektlari esa kalit-qiymat juftligi bilan ishlaydi. Qiymatlarga kalit orqali murojaat qilish, qiymatlarni o'zgartirish yoki o'chirish kabi operatsiyalar uchun ishlatiladi.</span>
+        </div>
+
+        <div class="card">
+          <h4>Hosting nima</h4>
+          <br />
+          <span>Hosting JavaScript dasturlash tilida o'zgaruvchilar va funksiyalar bilan ishlashda dasturlarni bajarish tartibini ta'minlash qoidalardan biridir. <br>
+            Tashqi (Compilation) bosqich: JavaScript dasturining boshlandiği paytda, dastur tashqi tomondan qayta o'qiladi va o'zgaruvchilar va funksiyalar uchun xotirada joy ayriladi. Bu bosqichda hoisting amaliyoti sodda ma'nosini anglatadi - o'zgaruvchilar va funksiyalar deklaratsiya qilingandan oldin ishlatilishadi.
+
+          <br>  Bajarish (Execution) bosqich: JavaScript dasturi bajarilganda, dastur yuqoriga qaytib o'qiladi va o'zgaruvchilar va funksiyalar qiymatlar bilan to'ldiriladi. Bu bosqichda dastur yuqoriga qaytib o'qilganda deklaratsiya qilingan o'zgaruvchilar va funksiyalar o'z qiymatlariga ega bo'ladi.</span>
+        </div>
+
+        <div class="card">
+          <h4>Prototayplar nima
+          </h4>
+          <br />
+          <span>Prototiplar JavaScript dasturlash tilida obyektlar bilan ishlashda o'zgaruvchanlik va qulaylikni ta'minlaydi.</span>
+        </div>
+
+        <div class="card">
+          <h4>Bind, call, apply nima ular qanday ishlaydi </h4>
+          <br />
+          <span>bind, call, va apply JavaScriptning obyekt funktsiyalarini chaqirish usullarini o'zgartirish uchun foydalaniladigan metodlardir. <br>
+            bind metodi: bind metodi orqali funktsiyani o'zgartirish imkoniyati yaratiladi. Ushbu metoddan foydalanib, funktsiyani belgilangan obyektlarga bog'lash imkoniyati paydo bo'ladi. bind metodi, yangi funksiya qaytaradi, shuning uchun asl funksiya o'zgarmaydi.
+          <br><br>
+          call metodi: call metodi orqali funksiyani bajarish va unga belgilangan obyektni uzatish imkoniyati yaratiladi. call metodi, funksiyani bajaradi va unga boshqa obyektni argument sifatida uzatadi.
+          <br><br>
+          apply metodi: apply metodi ham funksiyani bajarish imkoniyatini beradi, lekin obyekt argumentini massiv ko'rinishida qabul qiladi. Massiv elementlari esa funksiya argumentlariga tenglash uchun ishlatiladi.
+
+        </span>
+        </div>
+
+        <div class="card">
+          <h4>Function nima ?</h4>
+          <br />
+          <span>Funksiya JavaScriptning biror bir vazifani bajarish uchun yaratilgan o'zgarmagan obyekt hisoblanadi. Ushbu obyektning asosiy vazifasi, bir yoki bir nechta amallarni bajarish va natijani qaytarishdir. <br>
+           <br> Funksiya yaratilganidan so'ng, uning nomi orqali uni chaqirish mumkin. Chaqirish jarayoni orqali funksiya argumentlarini uzatish, unga obyekt yoki qiymatlar berish mumkin. Funksiya bajarilgandan keyin, uni natija (return) orqali qaytaradi.
+<br>
+            Funksiyalarning ba'zi amallari quyidagilardir:
+            <br><br>
+            Parametrlar: Funksiya ichida o'zgaruvchilar yoki parametrlar ishlatilishi mumkin. Bu parametrlar funksiya bajarilganda uzatilishi kerak bo'lgan qiymatlarni qabul qiladi.
+            <br><br>
+            Bajarish: Funksiya ichida bir yoki bir nechta vazifalar bajarilishi mumkin. Bu vazifalar JavaScriptning boshqa operatorlari bilan biriktiriladi va belgilangan tartibda bajariladi.
+            <br><br>
+            Natija qaytarish: Funksiya natijani return operatori orqali qaytaradi. return operatori vaqtincha</span>
+        </div>
+
+        <div class="card">
+          <h4>Necha hil functionlar bor </h4>
+          <br />
+          <span>Javascripta 3 xil function lar mavjud : Arrow function , Expression function , Regular function</span>
+        </div>
+
+        <div class="card">
+          <h4>This nima </h4>
+          <br />
+          <span>"This" so'zi JavaScriptda obyektning o'zini ma'nosini anglatadi.</span>
+        </div>
+
+        <div class="card">
+          <h4>REST API nima</h4>
+          <br />
+          <span>REST (Representational State Transfer) API, dasturlashda ma'lumotlarni almashish uchun amaliy interfeyslarni ta'minlaydigan bir protokoldir. REST API, bir tarmoqda o'zaro aloqada bo'lgan server va klientlar orasidagi ma'lumot almashishini tashkil etadi.
+<br><br>
+            REST API'lar, "resurslar" deb ataluvchi obyektlar to'plamini ishlatadi. Har bir resurs URL (Uniform Resource Locator) orqali identifikatsiya qilinadi. Misol uchun, bir REST API'da "users" resursi bo'lishi mumkin va unga "/users" URL manzili orqali murojaat qilinadi.
+            <br><br>
+            REST API'da har bir resursning belli HTTP metodlari bilan ishlashini aniqlaydigan qoidalar mavjud. Eng mashhur HTTP metodlar GET, POST, PUT, va DELETE.</span>
+        </div>
+
+        <div class="card">
+          <h4>Node.js nima </h4>
+          <br />
+          <span>Node.js - bu JavaScript dasturlash tilidan foydalanadigan, server tomoni o'yin o'ynashga mo'ljallangan va tarmoq ilovalarini yaratishga yordam beruvchi bir dasturlash platformasidir. Node.js, Chrome brauzerining JavaScript dasturlash muhiti (V8 JavaScript engine) asosida ishlaydigan va eng yuqori samaradorlik va optimallashtirishga ega olan JavaScript runtime (vaqti) hisoblanadi.
+<br><br>
+            Node.js asosan veb-serverlarni dasturlashda va tarmoq ilovalarini yaratishda foydalaniladi. U server tomonida JavaScript kodini ishga tushirishi va asinxron tarmoq so'rovlarini qabul qilishi mumkin bo'lgan yuqori darajadagi imkoniyatlarni ta'minlaydi.</span>
+        </div>
+
+        <div class="card">
+          <h4></h4>
+          <br />
+          <span>Node.js modullari ikkiga  bo'linadi:Built-in yani node js ni uziniki , Thir-party - tashqaridan yuklab olingan  , masalan npm -node package managaner</span>
+        </div>
+
+        <div class="card">
+          <h4>Http nima</h4>
+          <br />
+          <span>HTTP (HyperText Transfer Protocol) - bu tarmoq protokoli, veb-brauzerlar va veb-serverlar o'rtasidagi ma'lumot almashishni aniqlaydigan standart protokoldir. HTTP, ma'lumotlarni tekst formatida joylashtirish, so'rovlar yuborish va javob olishning qoidalarini belgilaydi. <br><br>
+           HTTPS (HyperText Transfer Protocol Secure) bu tarmoq protokoli, ma'lumotlar to'plamini shifrlash va xavfsizlikni ta'minlash uchun ishlatiladi.  </span>
+        </div>
+
+        <div class="card">
+          <h4>OOP nima </h4>
+          <br />
+          <span>OOP (Object-Oriented Programming) yoki obyektoriyatga yo'naltirilgan dasturlash, dasturlashdagi bir paradigmadir. Bu paradigma o'z asosiy tamoyillarini obyektlar, klasslar, xususiyatlar va metodlar kabi konseptlarga asoslangan holda shakllantiradi.
+
+            Obyektoriyatga yo'naltirilgan dasturlashda, dasturlash muammolarini yechish uchun, dasturchi obyektlar orqali ma'lumotlarni boshqaradi. Obyekt, ma'lumotlar to'plami va ularga oid funktsiyalardan iborat bo'ladi. Bu funktsiyalar obyektlarning metodlari deb ataladi.
+            
+            Obyektlar, biror obyektni yaratish uchun shablon sifatida xizmat qiladigan klasslar yordamida yaratiladi. Klass, obyektlarning yaratilishi, xususiyatlari va metodlari bilan bog'liq bo'lgan ma'lumotlarni belgilash uchun ishlatiladi.
+            
+            Obyektoriyatga yo'naltirilgan dasturlashning asosiy tamoyillari quyidagilardir:
+            <br><br>
+            Encapsulation (Qamrab oluvchi): Obyektoriyatga yo'naltirilgan dasturda, ma'lumotlarni yashirish, ularga faqatgina obyektning o'zini kirish imkonini berish orqali amalga oshiriladi. Bu, ma'lumotlarni to'g'ridan-to'g'ri o'zgartirib yoki boshqa obyektlar yoki kod tomonidan tez-tez o'zgarib bo'lmagandan qat'iy nazorat qilish imkonini beradi.
+            <br><br>
+            Inheritance (Miras oluvchi): Miras olish, bir klassning (asar klass) xususiyatlarini va metodlarini boshqa bir klass (voris klass)ga olib kelish imkonini beradi. Bu, kodni qaytadan ishlashni kamaytiradi, yana ishlatishni osonlashtiradi va kodni qaytadan ishlash va qayta ishlashga imkon beradi.
+            <br><br>
+            Polymorphism (Ko'plik): Polimorfizm, bir xususiyat yoki metodning bir nechta shakllanishini ta'minlaydi. Bu, bir klassning boshqa klasslar bilan o'zaro almashtirilishi yoki bir xususiyatning bir nechta turdagi obyektlar tomonidan qabul qilinishini ta'minlaydi.</span>
+        </div>
+
+        <div class="card">
+          <h4></h4>
+          <br />
+          <span></span>
+        </div>
+
+        <div class="card">
+          <h4></h4>
+          <br />
+          <span></span>
+        </div>
+
+        <div class="card">
+          <h4></h4>
+          <br />
+          <span></span>
+        </div>
+
+        <div class="card">
+          <h4></h4>
+          <br />
+          <span></span>
+        </div>
+
+        <div class="card">
+          <h4></h4>
+          <br />
+          <span></span>
+        </div>
+
+        <div class="card">
+          <h4></h4>
+          <br />
+          <span></span>
+        </div>
+
+
+        <div class="card">
+          <h4></h4>
+          <br />
+          <span></span>
+        </div>
+
+        <div class="card">
+          <h4></h4>
+          <br />
+          <span></span>
+        </div>
+
+        <div class="card">
+          <h4></h4>
+          <br />
+          <span></span>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
